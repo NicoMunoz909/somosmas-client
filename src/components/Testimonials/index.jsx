@@ -42,7 +42,7 @@ const Testimonials = () => {
                     style={{
                       width: "90px",
                       height: "90px",
-                      backgroundImage: `url(https://somosmas-server.herokuapp.com//images/${testimonial.imageUrl})`,
+                      backgroundImage: `url(https://somosmas-server.herokuapp.com/images/${testimonial.imageUrl})`,
                       overflow: "hidden",
                       objectFit: "cover",
                       backgroundRepeat: "no-repeat",

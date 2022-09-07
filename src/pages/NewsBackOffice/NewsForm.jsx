@@ -28,7 +28,7 @@ const NewsForm = () => {
             formData.append("image", image)
             formData.append("name", title)
             formData.append("content", content)
-            const {data} = await axios.put(`https://somosmas-server.herokuapp.com//news/${state.props.id}`, formData, config)
+            const {data} = await axios.put(`https://somosmas-server.herokuapp.com/news/${state.props.id}`, formData, config)
             console.log(data)
             navigate(-1)
             
@@ -48,7 +48,7 @@ const NewsForm = () => {
             formData.append("name", title2)
             formData.append("content", content2)
             const form = document.getElementById("formulario")
-            const { data } = await axios.post('https://somosmas-server.herokuapp.com//news', formData, config)
+            const { data } = await axios.post('https://somosmas-server.herokuapp.com/news', formData, config)
             form.reset()
             navigate(-1)
         } catch (e) {

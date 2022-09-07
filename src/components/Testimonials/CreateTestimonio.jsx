@@ -26,7 +26,7 @@ const CreateTestimonio = () => {
             formData.content = content
             console.log(formData)
             const form = document.getElementById("formulario")
-            const { data } = await axios.post('https://somosmas-server.herokuapp.com//testimonials', formData)
+            const { data } = await axios.post('https://somosmas-server.herokuapp.com/testimonials', formData)
             form.reset()
             navigate(-1)
         } catch (e) {

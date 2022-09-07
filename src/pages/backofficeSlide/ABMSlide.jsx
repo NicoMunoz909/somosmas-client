@@ -9,7 +9,7 @@ const ABMSlide = () => {
 
     useEffect(() => {
         const setInfo = async () => {
-            const {data} =  await axios.get("https://somosmas-server.herokuapp.com//slides")
+            const {data} =  await axios.get("https://somosmas-server.herokuapp.com/slides")
             setSlideInfo(data)
           }
           setInfo()

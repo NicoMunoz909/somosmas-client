@@ -14,7 +14,7 @@ const ABMMembers = () => {
 
     useEffect(() => {
         const getInfo = async () => {
-            const {data} = await axios.get("https://somosmas-server.herokuapp.com//members")
+            const {data} = await axios.get("https://somosmas-server.herokuapp.com/members")
             setMembersInfo(data)
         }
 
@@ -26,7 +26,7 @@ const ABMMembers = () => {
         ConfirmAlert({
             text: "Esta por eliminar este miembro, ¿desea continuar?",
             onConfirm: async () => {
-              await axios.delete(`https://somosmas-server.herokuapp.com//members/${id}`)
+              await axios.delete(`https://somosmas-server.herokuapp.com/members/${id}`)
               window.location.reload()
             },
           });
@@ -56,7 +56,7 @@ const ABMMembers = () => {
                     membersInfo.map((members) => (
                         <tr>
                             <th scope="row">{members.id}</th>
-                            <td ><img src={`https://somosmas-server.herokuapp.com//images/${members.image}`} style={{ width: "35px", height:"35px" }} className="img-fluid" alt={members.id} /></td>
+                            <td ><img src={`https://somosmas-server.herokuapp.com/images/${members.image}`} style={{ width: "35px", height:"35px" }} className="img-fluid" alt={members.id} /></td>
                             <td >{members.name}</td>
                             <td>{members.role}</td>
                             <td >{moment(members.createdAt).format("DD/MM/YYYY")}</td>

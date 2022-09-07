@@ -9,7 +9,7 @@ const Contacts = () => {
     useEffect(() => {
         const fetchData = async() => {
             const token = localStorage.getItem("user")
-            const {data} = await axios.get("https://somosmas-server.herokuapp.com//contacts" , {headers: {Authorization: `Bearer ${token}`}})
+            const {data} = await axios.get("https://somosmas-server.herokuapp.com/contacts" , {headers: {Authorization: `Bearer ${token}`}})
             return data
         }
         fetchData().then((r) => setData(r))

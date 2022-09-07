@@ -41,7 +41,7 @@ const FormOrganizacion = ({data}) => {
         })
         */
         try{
-          let message = await axios.put("https://somosmas-server.herokuapp.com//organizations/edit/1",values)
+          let message = await axios.put("https://somosmas-server.herokuapp.com/organizations/edit/1",values)
           
 
            setSendForm(true);

@@ -19,7 +19,7 @@ function NewsById() {
     async function fetchData() {
       if (mounted) {
         try {
-          let {data} = await axios.get(`https://somosmas-server.herokuapp.com//news/${id}`);
+          let {data} = await axios.get(`https://somosmas-server.herokuapp.com/news/${id}`);
           console.log(data);
           setProps({ ...data.news });
           setIsLoading(false);

@@ -29,7 +29,7 @@ function NovedadesItem({ image, content, id, name }) {
             style={{
               overflow: "hidden",
               flexGrow: "1",
-              backgroundImage: `url(https://somosmas-server.herokuapp.com//images/${image})`,
+              backgroundImage: `url(https://somosmas-server.herokuapp.com/images/${image})`,
               objectFit: "contain",
               backgroundRepeat: "no-repeat",
               backgroundSize: "auto 100%",
