@@ -15,7 +15,7 @@ class httpService {
     this.domain = API_URL;
   }
   request(url, method = "POST", data = null, config) {
-    url = joinURL("http://localhost:3000", url);
+    url = joinURL("https://somosmas-server.herokuapp.com/", url);
     let options = {
       headers,
       method,

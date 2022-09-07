@@ -29,7 +29,7 @@ const ABMUsers = () => {
         ConfirmAlert({
             text: "Esta por eliminar este miembro, ¿desea continuar?",
             onConfirm: async () => {
-              await axios.delete(`http://localhost:3000/users/${id}`)
+              await axios.delete(`https://somosmas-server.herokuapp.com//users/${id}`)
               window.location.reload()
             },
           });

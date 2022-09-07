@@ -18,7 +18,7 @@ const Contacto = () => {
             message: data.comentario
         }
 
-        let res = await axios.post('http://localhost:3000/contacts',myNewData,{headers:{'Content-Type': 'application/json'}})
+        let res = await axios.post('https://somosmas-server.herokuapp.com//contacts',myNewData,{headers:{'Content-Type': 'application/json'}})
         setIsLoading(true)
 
         if(res.statusText === "OK") setIsLoading(false)

@@ -71,7 +71,7 @@ const CreateUser = () => {
           })
           */
 
-            axios.post("http://localhost:3000/auth/register", { ...values })
+            axios.post("https://somosmas-server.herokuapp.com//auth/register", { ...values })
               .then((res) => {
                 if (res.errors) setError(res.errors);
                 navigate("/backoffice");

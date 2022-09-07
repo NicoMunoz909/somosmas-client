@@ -34,7 +34,7 @@ const Login = () => {
     onSubmit: (values) => {
       setIsLoading(true);
       axios
-        .post("http://localhost:3000/auth/login", { ...values })
+        .post("https://somosmas-server.herokuapp.com//auth/login", { ...values })
         .then((res) => {
           console.log(res.data)
           setIsLoading(false);

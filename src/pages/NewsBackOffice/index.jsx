@@ -89,7 +89,7 @@ const NewsBackOffice = () => {
                       <th scope="row">{novedad.id}</th>
                       <td>{novedad.name}</td>
                       <td>
-                        <img style={{ width: "35px" }} src={`http://localhost:3000/images/${novedad.image}`} alt="news img"></img>
+                        <img style={{ width: "35px" }} src={`https://somosmas-server.herokuapp.com//images/${novedad.image}`} alt="news img"></img>
                       </td>
                       <td>{moment(novedad.createdAt).format("DD/MM/YYYY")}</td>
                       <td

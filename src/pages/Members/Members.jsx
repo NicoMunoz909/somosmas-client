@@ -13,7 +13,7 @@ const Members = () => {
     })
 
     // useEffect(() => {
-    //     fetch('http://localhost:3000/members/1')
+    //     fetch('https://somosmas-server.herokuapp.com//members/1')
     //     .then((res) => setMember)
     // })
 
@@ -29,7 +29,7 @@ const Members = () => {
                     <a type='button' className='mb-5 mt-5 btn btn-danger btn-lg' href="/registro">¡Quiero ser parte!</a>
                 </div>
                 <div className='col-sm-12 col-lg-6'>
-                    <img className='img-fluid rounded-5' src={`http://localhost:3000/images/${member.image}`} alt={img3} />
+                    <img className='img-fluid rounded-5' src={`https://somosmas-server.herokuapp.com//images/${member.image}`} alt={img3} />
                 </div>
             </div>
         </div>

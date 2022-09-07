@@ -77,7 +77,7 @@ const TestimonialsForm = () => {
         if(id){
             //Edit
                 setIsLoading(true)
-                let res = await axios.put(`http://localhost:3000/testimonials/${id}`,{
+                let res = await axios.put(`https://somosmas-server.herokuapp.com//testimonials/${id}`,{
                     name: mydata.name,
                     content: myContent,
                     imageUrl: mydata.imageUrl
@@ -90,7 +90,7 @@ const TestimonialsForm = () => {
         }else{
             //create
             console.log('create')
-            let res = await axios.post('http://localhost:3000/testimonials',{
+            let res = await axios.post('https://somosmas-server.herokuapp.com//testimonials',{
                 name: mydata.name,
                 content: myContent,
                 imageUrl: mydata.imageUrl

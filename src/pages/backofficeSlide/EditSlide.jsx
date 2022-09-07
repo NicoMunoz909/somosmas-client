@@ -25,7 +25,7 @@ const EditSlide = () => {
             formData.append("text", text)
             formData.append("order", order)
             const form = document.getElementById("formulario")
-            const { data } = await axios.put(`http://localhost:3000/slides/${state.props.id}`, formData, config)
+            const { data } = await axios.put(`https://somosmas-server.herokuapp.com//slides/${state.props.id}`, formData, config)
             form.reset()
             navigate(-1)
         } catch (e) {

@@ -30,7 +30,7 @@ const MembersForm = () => {
             formData.append("role", puesto2)
             formData.append("image", image)
             formData.append("name", nombre2)
-            const { data } = await axios.post(`http://localhost:3000/members/`, formData, config)
+            const { data } = await axios.post(`https://somosmas-server.herokuapp.com//members/`, formData, config)
             navigate(-1)
         } catch (e) {
             console.log(e)
@@ -45,7 +45,7 @@ const MembersForm = () => {
             const formData = new FormData()
             formData.append("image", image)
             formData.append("name", nombre)
-            const { data } = await axios.put(`http://localhost:3000/members/${state.props.id}`, formData, config)
+            const { data } = await axios.put(`https://somosmas-server.herokuapp.com//members/${state.props.id}`, formData, config)
             navigate(-1)
         } catch (e) {
             console.log(e)

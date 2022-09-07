@@ -14,7 +14,7 @@ const News = () => {
 
   useEffect(() => {
     async function getData() {
-      let {data} = await axios.get("http://localhost:3000/news");
+      let {data} = await axios.get("https://somosmas-server.herokuapp.com//news");
       setNews(data);
     }
 
@@ -32,7 +32,7 @@ const News = () => {
               <div className="card mb-3 p-3 m-2 mt-5 border-0 rounded-4" style={{maxWidth: "540px", backgroundColor: "#9AC9FB"}}>
               <div className="row g-0">
                 <div className="col-md-4">
-                  <img src={`http://localhost:3000/images/${e.image}`} className="img-fluid rounded-3 shadow" alt="..." />
+                  <img src={`https://somosmas-server.herokuapp.com//images/${e.image}`} className="img-fluid rounded-3 shadow" alt="..." />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
