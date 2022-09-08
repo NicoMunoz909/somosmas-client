@@ -83,7 +83,7 @@ function Header() {
               Regístrate
             </Link>
           </>}
-          {(isLoggedIn && role === 1) &&
+          {(isLoggedIn && role === 4) &&
           <>
             <Link
               className="d-block text-decoration-none btn btn-outline-dark rounded-pill px-3"
@@ -104,7 +104,7 @@ function Header() {
               Cerrar Sesion
             </button>
           </>}
-          {(isLoggedIn && role === 2) &&
+          {(isLoggedIn && role === 14) &&
           <>
             <Link
               className="d-block text-decoration-none btn btn-outline-dark rounded-pill px-3"
