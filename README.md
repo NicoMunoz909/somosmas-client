@@ -1,6 +1,20 @@
 # Ong Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+### [Demo](https://somosmas-client.herokuapp.com/)
+
+#### Admin account:
+
+email: johndoe@test.com
+
+password: 12345678
+
+#### User account:
+
+email: ziajaberg@test.com
+
+password: 12345678
+
+---
 
 ## Available Scripts
 
