@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "secure": false,
+  "engines": {
+    "node": "14.17.4"
+  },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^34.2.0",
     "@ckeditor/ckeditor5-react": "^5.0.2",
