@@ -47,7 +47,7 @@ const RoutesNav = () => {
         <div className="min-vh-100">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/backoffice" element={<ProtectedRoute role={1} />}>
+            <Route path="/backoffice" element={<ProtectedRoute role={4} />}>
               <Route path="" element={<Backoffice />} />
               <Route path="slides" element={<ABMSlide />} />
               <Route path="slides/edit/:id" element={<EditSlide/>} />
